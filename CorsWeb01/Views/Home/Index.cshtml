@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>Request Cookies</h1>
+<ul>
+    @foreach (var key in Request.Cookies.AllKeys)
+    {
+        var c = Request.Cookies[key];
+        <li>
+            <strong>@c.Name: @c.Value</strong><br />
+            @Newtonsoft.Json.JsonConvert.SerializeObject(c)
+        </li>
+    }
+</ul>
+
+<div>
+    <form method="post" action="@Url.Action("SetCookies")">
+        <input type="submit" value="Set Cookies" />
+    </form>
+</div>
+
+<div>
+    <form method="post" action="@Url.Action("ClearCookies")">
+        <input type="submit" value="clear Cookies" />
+    </form>
+</div>
+
+<div>
+    <form method="post" action="@Url.Action("Api")">
+        <input type="submit" value="call api" />
+    </form>
+</div>
+
+<hr />
+
+<h1>other site</h1>
+
+<button id="send-other">send other</button>
+<h2>result</h2>
+<div id="result"></div>
+
+@section Scripts {
+    <script>
+        $("#send-other").click(function () {
+            $.ajax({
+                url: "https://localhost:44358/home/api",
+                xhrFields: {
+                    withCredentials: true
+                },
+                success: function (data) {
+                    console.log(data);
+                    $('#result').text(data);
+                },
+                error: function () {
+                    alert("failed");
+                }
+            })
+        });
+    </script>
+}

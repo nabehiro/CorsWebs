@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorsWeb01", "CorsWeb01\CorsWeb01.csproj", "{A86347B5-DC9B-4AC3-8363-D9C0BB616823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorsWeb02", "CorsWeb02\CorsWeb02.csproj", "{5832BC5D-FEE8-43E5-8947-8743AE148D7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A86347B5-DC9B-4AC3-8363-D9C0BB616823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86347B5-DC9B-4AC3-8363-D9C0BB616823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86347B5-DC9B-4AC3-8363-D9C0BB616823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86347B5-DC9B-4AC3-8363-D9C0BB616823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5832BC5D-FEE8-43E5-8947-8743AE148D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5832BC5D-FEE8-43E5-8947-8743AE148D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5832BC5D-FEE8-43E5-8947-8743AE148D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5832BC5D-FEE8-43E5-8947-8743AE148D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62D93BBE-7E7B-41F9-8AFF-57E41862E13A}
+	EndGlobalSection
+EndGlobal
